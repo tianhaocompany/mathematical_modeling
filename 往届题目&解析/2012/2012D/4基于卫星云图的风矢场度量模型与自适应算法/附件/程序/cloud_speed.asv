@@ -1,0 +1,32 @@
+function [speed,dirt]=cloud_speed(cloud_id,c_move)
+I=size(cloud_id);
+for i=1:I
+    c_x=cloud_id(i,1);
+    c_y=cloud_id(i,2);
+    c_movex=c_move(i,1)+c_x;
+    c_movey=c_move(i,2)+c_y;
+    [j1,w1]=xy2jingwei(c_x,c_y);
+    [j2,w2]=xy2jingwei(c_movex,c_movey);
+    %% 单位转换 ！！！！！！！！！ 换成弧度
+    j1=j1*(pi/180);
+    w1=w1*(pi/180);
+    j2=j2*(pi/180);
+    w2=w2*(pi/180);
+    temp=geodistance([j1,w1],[j2,w2],6);% 6坐标代号
+    if temp~=0
+        speed(i)=temp/1800;
+    else
+        speed(i)=0;
+    end
+    % 风向
+    gm=acos(sin(j1)*sin(j2)+cos(j1)*cos(j2)*cos(w2-w1));
+    wind_dirt=acos((sin(j2)-cos(gm)*sin(j1))/sin(gm)*cos(j1));
+    wind_dirt=wind_dirt/(pi/180);% 换成 度!!
+    if  w2>w1
+    dirt(i)=wind_dirt;
+    else
+    dirt(i)=306-wind_dirt;
+    end
+end
+speed=speed';
+dirt=dirt';

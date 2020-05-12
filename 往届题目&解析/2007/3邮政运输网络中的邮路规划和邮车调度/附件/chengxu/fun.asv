@@ -1,0 +1,19 @@
+function y=fun(path)
+ if isempty(path)
+     y=0;
+ else
+  load data_you
+  n=size(path');
+  temp1=sum(D(path,1));
+  temp2=sum(D(path,2));
+  y=1;
+  if temp1<66 & temp2<66
+    for i=1:n(1)
+      if temp1-D(path(i),1)+D(path(i),2)>65
+           y=0;break;
+      end
+     end
+  else
+      y=0;
+  end
+end

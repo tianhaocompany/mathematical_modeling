@@ -1,0 +1,35 @@
+function [sita,n]=my_choose(Loc,P,f)
+jiaodu1=[-2:0.1:-1 1:0.1:2];
+jiaodu2=[-1:0.1:-0.1 0.1:0.1:1];
+eps=10;
+if f>eps
+    sita=jiaodu1(ceil(rand*size(jiaodu1,2)));
+else
+    sita=jiaodu2(ceil(rand*);
+end
+A=[P'-Loc(:,1) Loc(:,2)-Loc(:,1) Loc(:,5)-Loc(:,1)];
+f1=det(A);
+rdn=rand;
+if f1~=0
+    number=[1/6 1/3 1/2 5/6 1];
+    for i=1:5
+        if rdn<number(i);
+            n=i;
+            break
+        end
+    end
+else
+    number=[1/8 3/8 5/8 3/4 1];
+    for i=1:5
+        if rdn<number(i);
+            n=i;
+            break
+        end
+    end
+    if f>eps
+        sita=jiaodu(ceil(rand*41));
+    else
+        sita=jiaodu(ceil(rand*20)+10);
+    end
+end
+    

@@ -1,0 +1,9 @@
+Gibbsjs1.m   一级杆抽油泵处载荷函数和位移函数Matlab计算程序；
+DINPUT.xls   一级杆处理后的悬点载荷数据，作为Matlab程序输入参数；
+UINPUT.xls   一级杆处理后的悬点位移数据，作为Matlab程序输入参数；
+TINPUT.xls   一级杆处理后的周期时间数据，作为Matlab程序输入参数；
+
+Gibbsjs2.m   三级杆抽油泵处载荷函数和位移函数Matlab计算程序；
+DINPUT2.xls  三级杆处理后的悬点载荷数据，作为Matlab程序输入参数；
+UINPUT2.xls  三级杆处理后的悬点位移数据，作为Matlab程序输入参数；
+TINPUT2.xls  三级杆处理后的周期时间数据，作为Matlab程序输入参数；

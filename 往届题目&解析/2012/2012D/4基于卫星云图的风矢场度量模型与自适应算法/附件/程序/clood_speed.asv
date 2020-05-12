@@ -1,0 +1,12 @@
+function speed=clood_speed(cloud_id,c_move)
+I=size(cloud_id);
+for i=1:I
+    c_start=cloud_id(i,1:2);
+    c_end=cloud_id(i,3:4);
+    c_movex=c_move(i,1)+c_start;
+    c_movey=c_move(i,2)+c_start;
+    xy2jingwei();
+    
+    
+end
+end

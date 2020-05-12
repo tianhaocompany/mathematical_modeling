@@ -1,0 +1,60 @@
+function main
+%问题二的主函数，一键执行
+%  Author : LIU Chao  
+%  e-mail : liuchao-will@163.com
+%  School of Computer Science and Technology,Southeast
+%  University,China,Sept.2010  
+clear all;%清空工作空间所有数据
+[M,h]=data_pros;%取出数据和基因ID ,这里数据来源是project_data.xls
+M_init=M;
+[M,M_average,M_stdd]=stdTrans(M);%标准化变换
+[M_sorted,h_sorted,M_average_sorted,M_stdd_sorted]=relief(M,h,M_average,M_stdd);%对矩阵按FSC进行排序
+%实验证明用BFSC准则最好
+a=zhucheng(M_sorted);%主成分分析
+% 找到61列具有最大FSC的基因
+data61 = M_sorted(:,(1:61));%取出这61列数据
+% savefile = 'data62X61.mat';
+% save(savefile, 'data61');
+data61h=h_sorted(1:61);%取出这61列数据的基因ID
+data61_average_sorted=M_average_sorted(1:61);
+data61_stdd_sorted=M_stdd_sorted(1:61);
+% M_init=stdTrans(M_init);%标准化变换
+[h_min,err_min,alpha,bias,M3,M3_average,M3_stdd]=RFE_Relief(data61,data61h,data61_average_sorted,data61_stdd_sorted);%找到决定分类的最小数量的基因组
+% h_min2={};
+% h_min2(1)=h_min(3)
+% h_min2(2)=h_min(2)
+% h_min2(3)=h_min(1)
+
+for i=1:1:length(h)
+    if strcmp(h(i),'Hsa.6814')% 'Hsa.627''Hsa.8010' 'Hsa.1961'
+        A=trnX(:,i);
+        x_min=min(A);
+        x_max=max(A);
+        index=i;
+        break;
+    end
+    if strcmp(h(i),'Hsa.6814')% 'Hsa.627''Hsa.8010' 'Hsa.1961'
+        A=trnX(:,i);
+        x_min=min(A);
+        x_max=max(A);
+        index=i;
+        break;
+    end
+    if strcmp(h(i),'Hsa.6814')% 'Hsa.627''Hsa.8010' 'Hsa.1961'
+        A=trnX(:,i);
+        x_min=min(A);
+        x_max=max(A);
+        index=i;
+        break;
+    end
+end
+
+[bestx,index,x_min,x_max]=test(h_min,M3);
+% bestx_init=bestx*M3_stdd(index)+M3_average(index)
+% x_min_init=x_min*M3_stdd(index)+M3_average(index)%测试x_min_init是否是index对应列中的最小值
+% x_max_init=x_max*M3_stdd(index)+M3_average(index)%测试x_max_init是否是index对应列中的最大值
+% [bestx,index,x_min,x_max]=test(data61h,data61);
+% bestx_init=bestx*data61_stdd_sorted(index)+data61_average_sorted(index)
+% x_min_init=x_min*data61_stdd_sorted(index)+data61_average_sorted(index)%测试x_min_init是否是index对应列中的最小值
+% x_max_init=x_max*data61_stdd_sorted(index)+data61_average_sorted(index)%测试x_max_init是否是index对应列中的最大值
+

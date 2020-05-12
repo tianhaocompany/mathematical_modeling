@@ -1,0 +1,7 @@
+为了便于阅卷老师阅卷，我们特别对论文中的文件进行如下说明：
+1.jiagong1.m文件为，为计算问题1加工步骤而编写的matlab程序。
+2.jiagong2.m文件为，为计算问题2加工步骤而编写的matlab程序。
+3.jiagong3.m文件为，为计算问题3加工步骤而编写的matlab程序。
+4.jiagong4.m文件为，为计算问题3加工步骤而编写的matlab程序。
+5.jiagong2d.m和myfun.m是为检查问题2加工干涉而编写的matlab程序。
+6.jiagong4d1.m、jiagong4d2.m和myfun60jia.m、myfun60jian.m是为检查问题4加工干涉而编写的程序。

@@ -1,0 +1,52 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: nprog - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/nprog.res" /d "NDEBUG" /d "_AFXDLL" "C:\Documents and Settings\banma\桌面\电子版数据文件\源代码\nprog.rc"" 
+Creating temporary file "C:\DOCUME~1\banma\LOCALS~1\Temp\RSP342.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/nprog.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\banma\桌面\电子版数据文件\源代码\nprog.cpp"
+"C:\Documents and Settings\banma\桌面\电子版数据文件\源代码\nprogDlg.cpp"
+"C:\Documents and Settings\banma\桌面\电子版数据文件\源代码\PetrolCity.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\banma\LOCALS~1\Temp\RSP342.tmp" 
+Creating temporary file "C:\DOCUME~1\banma\LOCALS~1\Temp\RSP343.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/nprog.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\banma\桌面\电子版数据文件\源代码\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\banma\LOCALS~1\Temp\RSP343.tmp" 
+Creating command line "link.exe /nologo /subsystem:windows /incremental:no /pdb:"Release/nprog.pdb" /machine:I386 /out:"Release/nprog.exe"  ".\Release\nprog.obj" ".\Release\nprogDlg.obj" ".\Release\PetrolCity.obj" ".\Release\StdAfx.obj" ".\Release\nprog.res" "
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+nprog.cpp
+nprogDlg.cpp
+C:\Documents and Settings\banma\桌面\电子版数据文件\源代码\nprogDlg.cpp(540) : warning C4101: 'ttt' : unreferenced local variable
+C:\Documents and Settings\banma\桌面\电子版数据文件\源代码\nprogDlg.cpp(754) : warning C4101: 'rtn' : unreferenced local variable
+C:\Documents and Settings\banma\桌面\电子版数据文件\源代码\nprogDlg.cpp(831) : warning C4101: 'min' : unreferenced local variable
+PetrolCity.cpp
+C:\Documents and Settings\banma\桌面\电子版数据文件\源代码\PetrolCity.cpp(436) : warning C4102: 'END1' : unreferenced label
+C:\Documents and Settings\banma\桌面\电子版数据文件\源代码\PetrolCity.cpp(347) : warning C4101: 'maxweight' : unreferenced local variable
+C:\Documents and Settings\banma\桌面\电子版数据文件\源代码\PetrolCity.cpp(337) : warning C4101: 'rate' : unreferenced local variable
+C:\Documents and Settings\banma\桌面\电子版数据文件\源代码\PetrolCity.cpp(347) : warning C4101: 'weight' : unreferenced local variable
+C:\Documents and Settings\banma\桌面\电子版数据文件\源代码\PetrolCity.cpp(354) : warning C4101: 'maxcnt' : unreferenced local variable
+C:\Documents and Settings\banma\桌面\电子版数据文件\源代码\PetrolCity.cpp(852) : warning C4101: 'k' : unreferenced local variable
+C:\Documents and Settings\banma\桌面\电子版数据文件\源代码\PetrolCity.cpp(1013) : warning C4101: 'j' : unreferenced local variable
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+nprog.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

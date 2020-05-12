@@ -1,0 +1,109 @@
+Distribution:    Nakagami
+Log likelihood:  -592.768
+Domain:          0 < y < Inf
+Mean:            1.73503
+Variance:        0.194237
+
+Parameter  Estimate  Std. Err.
+mu         3.98798    0.171411
+omega      3.20458   0.0507451
+
+Estimated covariance of parameter estimates:
+       mu            omega       
+mu      0.0293818    3.38761e-010
+omega  3.38761e-010  0.00257506  
+
+Distribution:    Lognormal
+Log likelihood:  -573.739
+Domain:          0 < y < Inf
+Mean:            1.73295
+Variance:        0.203774
+
+Parameter  Estimate  Std. Err. 
+mu         0.516998  0.00810256
+sigma      0.256225  0.00573368
+
+Estimated covariance of parameter estimates:
+       mu            sigma       
+mu     6.56515e-005  4.82964e-020
+sigma  4.82964e-020  3.2875e-005
+
+
+Distribution:    Weibull
+Log likelihood:  -648.255
+Domain:          0 < y < Inf
+Mean:            1.72663
+Variance:        0.239283
+
+Parameter  Estimate  Std. Err.
+a           1.9061   0.0161614
+b          3.95688   0.0898892
+
+Estimated covariance of parameter estimates:
+   a            b          
+a  0.000261191  0.000485239
+b  0.000485239  0.00808007
+
+Distribution:    Gamma
+Log likelihood:  -578.096
+Domain:          0 < y < Inf
+Mean:            1.73277
+Variance:        0.194404
+
+Parameter  Estimate  Std. Err.
+a           15.4446   0.683373
+b          0.112193  0.0050456
+
+Estimated covariance of parameter estimates:
+   a            b           
+a    0.466998   -0.00339238 
+b  -0.00339238  2.54581e-005
+
+Distribution:    Lognormal
+Log likelihood:  -5339.97
+Domain:          0 < y < Inf
+Mean:            1.70163
+Variance:        0.187185
+
+Parameter  Estimate  Std. Err. 
+mu         0.500264  0.00250285
+sigma      0.250285  0.00176991
+
+Estimated covariance of parameter estimates:
+       mu             sigma        
+mu     6.26425e-006   -4.38658e-021
+sigma  -4.38658e-021  3.13259e-006
+
+
+Distribution:    Lognormal
+Log likelihood:  -4927.59
+Domain:          0 < y < Inf
+Mean:            1.68556
+Variance:        0.171308
+
+Parameter  Estimate  Std. Err. 
+mu         0.492826  0.00241967
+sigma      0.241967  0.00171109
+
+Estimated covariance of parameter estimates:
+       mu             sigma        
+mu     5.85479e-006   -2.89755e-019
+sigma  -2.89755e-019  2.92783e-006
+
+
+Distribution:    Lognormal
+Log likelihood:  -5323.74
+Domain:          0 < y < Inf
+Mean:            1.70681
+Variance:        0.186405
+
+Parameter  Estimate  Std. Err. 
+mu         0.503615  0.00249043
+sigma      0.249043  0.00176113
+
+Estimated covariance of parameter estimates:
+       mu             sigma        
+mu     6.20224e-006   -2.27205e-019
+sigma  -2.27205e-019  3.10158e-006
+
+

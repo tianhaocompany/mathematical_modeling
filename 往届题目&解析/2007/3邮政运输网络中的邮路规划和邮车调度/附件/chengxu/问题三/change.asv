@@ -1,0 +1,8 @@
+temp=0;
+temp=[W(1,:),W(36,:);W((59:64),:);W((66:74)+1,:)];
+temp=temp';
+temp=[W(1,:),W(36,:);temp((59:64),:);temp((66:74)+1,:)];
+temp;
+temp=[temp(end,:);temp(1:end-1,:)];
+temp=temp';
+temp=[temp(end,:);temp(1:end-1,:)]

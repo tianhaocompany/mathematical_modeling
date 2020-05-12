@@ -1,0 +1,10 @@
+adjoint.f90：伴随同化模型程序；
+dataChange.m：对原始数据进行滤波和插值处理；
+coordinate_change.m：将观测从观测坐标系转换到基础坐标系中；
+middle.m：计算空间异面直线公垂线段中点坐标，用于飞行器定位；
+model_result_q2.m：问题二中用伴随同化方法得到的结果的可视化程序；
+model_result_q3.m：问题三中用伴随同化方法得到的结果的可视化程序；
+nihe.m：拟合方法解决问题二；
+q1_traj.m：问题一中卫星的轨道计算；
+q2_traj.m：问题一中06和09号卫星的轨道计算；
+q3_systemerror.m：计算问题三中的系统误差；

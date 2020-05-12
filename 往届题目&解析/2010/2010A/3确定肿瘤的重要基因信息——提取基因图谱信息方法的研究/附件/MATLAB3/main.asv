@@ -1,0 +1,3 @@
+function main
+%ÎÊÌâÈı
+svm_linear;%
