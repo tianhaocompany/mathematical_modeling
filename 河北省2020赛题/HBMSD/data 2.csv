@@ -1,4 +1,4 @@
-Index,starttime,resolution,speed,volume,occupancy
+Index_Num,starttime,resolution,speed,volume,occupancy
 7,2014-02-01T00:15:00,0:05:00,64,NA,0
 16,2014-02-01T00:35:00,0:05:00,NA,0,0
 18,2014-02-01T00:40:00,0:05:00,NA,0,0
